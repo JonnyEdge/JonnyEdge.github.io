@@ -1,0 +1,51 @@
+$color: #ffffff;
+$hover: #ff0000;
+$padding: 30px;
+$margin: 0px;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: $margin;
+}
+
+header {
+  background-color:#322b32;
+  color: $color;
+  margin: $margin;
+  padding: $padding;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin-right: $padding;
+    a {
+      color: $color;
+      &:hover { color: $hover }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex: {
+    direction: row;
+    wrap: nowrap;
+  }
+  justify-content: flex-start;
+  padding: $padding;
+  article {
+    width: 66.6%;
+    padding-right: $padding;
+  }
+  aside {
+    display: block;
+    width: 33.3%;
+  }
+}
+
+footer {
+  padding: $padding;
+}
